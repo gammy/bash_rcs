@@ -20,13 +20,10 @@ function xe() {
 	ret=$(curl "http://www.xe.com/wap/2co/convert.cgi?Amount=${amount}&From=${currency_src}&To=${currency_dst}" -A "Mozilla" -s)
 	ret=$(echo $ret | sed -n "s/.*>\(.*\) $currency_dst<.*/\1/p")
 
-	echo "ret = \"$ret\""
-
 	if [ $? -ne 0 ] || [ $ret = "" ] || [ $ret = "ERR" ]; then
 		echo "It appears that script execution failed: cannot convert currency"!
 		return 1
 	fi
 
-	echo -n "$amount $currency_src = "
-	echo " $currency_dst"
+	echo "$amount $currency_src = $ret $currency_dst"
 }
