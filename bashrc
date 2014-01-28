@@ -17,7 +17,7 @@ fi
 good=0
 bad=0
 
-for f in $(find "$scripts" -type f -iname "*.bash" | sort -n); do
+for f in $(find "$scripts" -maxdepth 1 -type f -iname "*.bash" | sort -n); do
 
 	source "$f" "$scripts"
 
