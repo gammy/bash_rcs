@@ -2,7 +2,7 @@
 # All bash components will be loaded in numerical order.
 
 # Script path. All source:able scripts should reside here or be symlinked to
-# this path, and should have .bash as the suffix. Subdirectories aren't read;
+# this path, and should have .bash as the postfix. Subdirectories aren't read;
 # you can do that yourself, for subcript execution 
 # (01_foo i run here, and 01_foo executes scripts in bar/)
 scripts=$HOME/.bash/
