@@ -22,10 +22,11 @@ alias "mplayer-dvd-hdmi-audio"="mplayer -ao alsa:device=hw=0.3 -mouse-movements 
 # Naughty and system-breaking!
 which wget > /dev/null 2>&1 || alias "wget"='curl -L -O'
 
-alias "nzbget-add-all"='find . -maxdepth 1 -iname "*.nzb" | while read f; do echo "To add: \"$f\""; nzbget -A "$f" && rm "$f" && sleep 1; done'
+alias "nzbget-add-all"='find . -maxdepth 1 -iname "*.nzb" | while read f; do echo "To add: \"$f\""; nzbget -A F "$f" && rm "$f" && sleep 1; done'
 alias "journalctlf"="urxvt -title journalctlf -e sudo journalctl -f"
 alias "xload"='xload -bg "#202020" -hl white -fg "#b93f3f" -nolabel -update 1'
 alias "topf"="urxvt -title topf -e top"
 alias "webfsd"="webfsd -F -f index.html -r /home/gammy/doc/webfs"
 alias "xsnow"="xsnow -snowflakes 500 -bg \"#1f2c41\" -solidbg"
 alias "pacman-aur"="trizen"
+alias "vidplay-all"="find . -type f -exec vidplay -idx -fs \"{}\" \;"

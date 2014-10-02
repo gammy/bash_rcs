@@ -3,12 +3,6 @@
 #source /etc/profile
 #source /home/gammy/code/tracked/github/shist/dstack
 
-#export DEVKITPRO=/opt/devkitpro
-#export DEVKITPPC=$DEVKITPRO/devkitPPC
-#export WIILOAD=tcp:192.168.1.67
-#export PATH=$DEVKITPPC/bin:$PATH
-#export STELROOT=/home/gammy/Programs/stellarium/
-
 export PATH=/sbin:$PATH
 export PATH=/usr/sbin:$PATH
 export PATH=$HOME/code/misc-scripts:$PATH
