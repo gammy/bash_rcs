@@ -7,6 +7,7 @@ export PATH=/sbin:$PATH
 export PATH=/usr/sbin:$PATH
 export PATH=$HOME/code/misc-scripts:$PATH
 export PATH=/home/gammy/programs/ucon64/ucon64-2.0.0-src/src/aur/ucon64/src/ucon64-2.0.0-src/src:$PATH
+export PATH="$PATH:$GOPATH/bin"
 #export PATH=$PATH:/home/gammy/Programs/arduino-1.0/hardware/tools/
 #export PATH=$PATH:$HOME/Programs/arduino-1.0/hardware/tools/
 
