@@ -1,4 +1,6 @@
 #!/bin/bash
+alias ls="ls --color=auto"
+alias dir="dir --color=auto"
 
 # Mplayer aliases: 
 # mplayer-easycap-composite, 
@@ -30,3 +32,6 @@ alias "webfsd"="webfsd -F -f index.html -r /home/gammy/doc/webfs"
 alias "xsnow"="xsnow -snowflakes 500 -bg \"#1f2c41\" -solidbg"
 alias "pacman-aur"="trizen"
 alias "vidplay-all"="find . -type f -exec vidplay -idx -fs \"{}\" \;"
+
+# -V verbose, -R recurcive, fields=what to show on scratchpad,
+alias "ctags"="ctags -V --c-kinds=+p --fields=+iaS --extra=+q"
